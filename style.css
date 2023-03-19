@@ -39,13 +39,15 @@ body {
   max-width: 600px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 2rem 0;
+  padding: 1rem 0;
 }
-.nav-center span {
+h1 {
   color: var(--font);
   font-size: 2.5rem;
+  font-weight: 400;
   text-transform: capitalize;
   letter-spacing: 2px;
 }
@@ -63,7 +65,7 @@ body {
   cursor: pointer;
 }
 .articles {
-  padding: 5rem 0;
+  padding: 4rem 0;
   width: 90vw;
   max-width: 600px;
   margin: 0 auto;
@@ -93,6 +95,11 @@ body {
 }
 
 /* --- MOBILE RESPONSIVE --- */
-@media screen and (max-width: 450px) {
-  /* some class */
+@media screen and (max-width: 400px) {
+  .btn {
+    margin-top: 1rem;
+  }
+  .articles {
+    padding: 2rem 0;
+  }
 }

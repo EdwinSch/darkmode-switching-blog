@@ -1,8 +1,13 @@
 /* ---- TARGETS && INITIALIZERS ---- */
-/* ---- SCRIPT ---- */
-/* ---- FUNCTIONS ---- */
+const toggleBtn = getElement(".btn");
 
-console.log("hello world");
+/* ---- SCRIPT ---- */
+
+toggleBtn.addEventListener("click", () => {
+  document.documentElement.classList.toggle("dark-theme");
+});
+
+/* ---- FUNCTIONS ---- */
 
 //-- Get DOM element function
 function getElement(selector) {

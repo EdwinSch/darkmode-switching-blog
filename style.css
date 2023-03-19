@@ -7,28 +7,22 @@
 
 /* --- ROOT VARIABLES --- */
 :root {
-  --grey-50: #f8fafc;
-  --grey-100: #f1f5f9;
-  --grey-200: #e2e8f0;
-  --grey-300: #cbd5e1;
-  --grey-400: #94a3b8;
-  --grey-500: #64748b;
-  --grey-600: #475569;
-  --grey-700: #334155;
-  --grey-800: #1e293b;
-  --grey-900: #0f172a;
-  --gold: #c59d5f;
-  --black: #222;
-  --white: #fff;
-  --red-light: #f8d7da;
-  --red-dark: #842029;
-  --green-light: #d1e7dd;
-  --green-dark: #0f5132;
-
+  /* --grey-50: #f8fafc; */
+  --bgColor: #f1f5f9;
+  --dateTime: #94a3b8;
+  --font: #0f172a;
+  --fontInvert: #ffffff;
+  --hotpink: #d23669;
   --inspect: solid red 1px;
-  --backgroundColor: var(--grey-50);
-  --textColor: var(--grey-900);
   --transition: 0.3s ease;
+}
+/* --- DARK THEME VARIABLES --- */
+.dark-theme {
+  --bgColor: #1e293b;
+  --dateTime: #94a3b8;
+  --font: #ffffff;
+  --fontInvert: #0f172a;
+  --hotpink: #ff89b0;
 }
 
 /* --- MAIN CSS --- */
@@ -37,7 +31,7 @@ body {
   min-height: 100vh;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: var(--grey-100);
+  background-color: var(--bgColor);
 }
 
 .nav-center {
@@ -50,19 +44,20 @@ body {
   padding: 2rem 0;
 }
 .nav-center span {
+  color: var(--font);
   font-size: 2.5rem;
   text-transform: capitalize;
   letter-spacing: 2px;
 }
 .btn {
   font-size: 1rem;
-  background: #d23669;
-  color: var(--white);
+  background: var(--hotpink);
+  color: var(--fontInvert);
   padding: 0.25rem 0.5rem;
   border-radius: 5px;
   border-color: transparent;
   text-transform: capitalize;
-  transition: all 0.3s linear;
+  transition: all 0.25s linear;
   font-weight: bold;
   letter-spacing: 2px;
   cursor: pointer;
@@ -77,12 +72,13 @@ body {
   margin-bottom: 3rem;
 }
 .post h2 {
-  color: #d23669;
+  color: var(--hotpink);
   text-transform: capitalize;
   letter-spacing: 2px;
   font-size: 1.75rem;
 }
 .post p {
+  color: var(--font);
   font-size: 0.875rem;
   font-weight: 300;
   line-height: 1.5;
@@ -90,7 +86,7 @@ body {
 .post-info {
   margin-bottom: 0.75rem;
   font-style: italic;
-  color: var(--grey-400);
+  color: var(--dateTime);
 }
 .post-info span {
   margin-right: 0.5rem;

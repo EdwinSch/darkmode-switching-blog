@@ -42,7 +42,7 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 2rem 0;
 }
 h1 {
   color: var(--font);
@@ -96,6 +96,9 @@ h1 {
 
 /* --- MOBILE RESPONSIVE --- */
 @media screen and (max-width: 400px) {
+  .nav-center {
+    padding: 1rem 0;
+  }
   .btn {
     margin-top: 1rem;
   }

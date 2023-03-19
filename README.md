@@ -1,7 +1,5 @@
-### Main Title
+## Darkmode Switching Blog
 
-## Sub Heading/Title
-
-Lorem Ipsum
+JavaScript practice project to create a mocked blog app with darkmode switch. The project includes data mapping from a module and implementing the moment.js library for date formatting.
 
 🚀 [SOME LINK](https://google.com)

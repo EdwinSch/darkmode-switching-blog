@@ -13,6 +13,8 @@ toggleBtn.addEventListener("click", () => {
 const articlesData = articles.map((article) => {
   // destructure incoming data
   const { id, title, date, length, snippet } = article;
+  // format date from momentsJS CDN
+  const formatDate = moment(date).format("MMMM Do, YYYY");
   // create new article for each data item
   const articleComp = document.createElement("article");
   articleComp.classList.add("post");
@@ -21,7 +23,7 @@ const articlesData = articles.map((article) => {
   articleComp.innerHTML = `
   <h2>${title}</h2>
   <div class="post-info">
-    <span>${date}</span>
+    <span>${formatDate}</span>
     <span>${length} minute read</span>
   </div>
   <p>
